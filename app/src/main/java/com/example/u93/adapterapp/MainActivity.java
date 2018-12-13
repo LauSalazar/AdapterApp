@@ -9,13 +9,34 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private AdapterProducts adapterProducts;
+    private AdapterPersons adapterPersons;
     private RecyclerView recyclerView;
+    private RecyclerView recyclerViewPersons;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.rvRecycler);
+        recyclerViewPersons = findViewById(R.id.rvRecyclerPersons);
         loadAdapter();
+        loadAdapterPersons();
+    }
+
+    private void loadAdapterPersons() {
+        Person person1 = new Person("Laura");
+        Person person2 = new Person("Karen");
+        Person person3 = new Person("Hildamar");
+
+        ArrayList<Person> persons = new ArrayList<>();
+        persons.add(person1);
+        persons.add(person2);
+        persons.add(person3);
+
+        adapterPersons = new AdapterPersons(persons);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        recyclerViewPersons.setLayoutManager(linearLayoutManager);
+        recyclerViewPersons.setAdapter(adapterPersons);
+
     }
 
     private void loadAdapter(){

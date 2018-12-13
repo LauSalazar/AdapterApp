@@ -25,7 +25,10 @@ public class AdapterPersons extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-
+        CustomViewHolderPerson viewHolderPerson = (CustomViewHolderPerson) holder;
+        Person person = persons.get(position);
+        viewHolderPerson.apellido.setText(person.getApellido());
+        viewHolderPerson.nombre.setText(person.getNombre());
     }
 
     @Override

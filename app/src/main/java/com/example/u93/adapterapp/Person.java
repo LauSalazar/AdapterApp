@@ -4,6 +4,10 @@ public class Person {
     private String nombre;
     private String apellido;
 
+    public Person(String nombre) {
+        this.nombre = nombre;
+    }
+
     public String getNombre() {
         return nombre;
     }
