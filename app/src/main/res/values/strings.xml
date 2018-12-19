@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">AdapterApp</string>
+    <string name="fragment_one">Contactos</string>
+    <string name="fragment_two">Fragmento dos</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment_one">Fragemento Uno</string>
+    <string name="hello_blank_fragment_two">Fragmento Dos</string>
 </resources>
