@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout tools:context=".FragmentTwo"
+<LinearLayout tools:context=".FragmentTwo"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     xmlns:tools="http://schemas.android.com/tools">
-    <TextView
-        android:text="@string/hello_blank_fragment_two"
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="20dp"
+        android:id="@+id/recyclerProducts"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
-</FrameLayout>
+</LinearLayout>

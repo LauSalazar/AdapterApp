@@ -15,12 +15,15 @@ public class FragmentActivity extends AppCompatActivity {
     private TextView tvDos;
     private FrameLayout frameLayout;
     private RecyclerView recyclerViewPersons;
+    private RecyclerView recyclerViewProducts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
         recyclerViewPersons = findViewById(R.id.rvRecyclerPersons);
+        recyclerViewProducts = findViewById(R.id.recyclerProducts);
+
 
         tvUno = findViewById(R.id.tvUno);
         tvDos = findViewById(R.id.tvDos);

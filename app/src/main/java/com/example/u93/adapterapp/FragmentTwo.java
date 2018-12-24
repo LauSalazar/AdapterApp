@@ -20,9 +20,8 @@ public class FragmentTwo extends Fragment {
     public FragmentTwo(){}
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View view = inflater.inflate(R.layout.fragment_one,container,false);
-        recyclerView = view.findViewById(R.id.rvRecycler);
-        loadAdapterProducts(pro);
+        View view = inflater.inflate(R.layout.fragment_two,container,false);
+        recyclerView = view.findViewById(R.id.recyclerProducts);
         repository = new Repository();
 
         Thread thread = new Thread(new Runnable() {
@@ -41,7 +40,7 @@ public class FragmentTwo extends Fragment {
             ArrayList<Product> products = repository.getProducts();
             loadAdapterProducts(products);
 
-        } catch (IOException e) {
+        } catch (final IOException e) {
             getActivity().runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
@@ -52,21 +51,19 @@ public class FragmentTwo extends Fragment {
         }
     }
 
-    private void loadAdapterProducts(ArrayList<Product> products) {
+    private void loadAdapterProducts(final ArrayList<Product> products) {
+        if (getActivity() != null) {
 
-        getActivity().runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                adapter = new AdapterProducts(products);
-                LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-                recyclerView.setLayoutManager(linearLayoutManager);
-                recyclerView.setAdapter(adapter);
-            }
-        });
-
-
-
-
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    adapter = new AdapterProducts(products);
+                    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
+                    recyclerView.setLayoutManager(linearLayoutManager);
+                    recyclerView.setAdapter(adapter);
+                }
+            });
+        }
     }
 
 

@@ -26,7 +26,7 @@ public class Repository {
                 return response.body();
             }
         } catch (IOException e){
-            defaultError();
+            throw defaultError();
         }
     }
 
