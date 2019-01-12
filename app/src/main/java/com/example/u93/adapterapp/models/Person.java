@@ -1,4 +1,4 @@
-package com.example.u93.adapterapp;
+package com.example.u93.adapterapp.models;
 
 public class Person {
     private String nombre;

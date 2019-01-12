@@ -7,4 +7,21 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_blank_fragment_one">Fragemento Uno</string>
     <string name="hello_blank_fragment_two">Fragmento Dos</string>
+    }
+    <string name="nombre">Nombre</string>
+    <string name="descripcion">Descripción</string>
+    <string name="precio">Precio</string>
+    <string name="marca">Marca</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="create_producto">Crear Producto</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="error_internet">Sin conexión</string>
+    <string name="message_error_internet">No hay conexión con internet</string>
+    <string name="text_again">Intente de nuevo</string>
+
+
+
 </resources>

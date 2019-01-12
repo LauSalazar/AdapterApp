@@ -1,4 +1,4 @@
-package com.example.u93.adapterapp;
+package com.example.u93.adapterapp.fragments;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -9,6 +9,10 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.example.u93.adapterapp.R;
+import com.example.u93.adapterapp.fragments.FragmentOne;
+import com.example.u93.adapterapp.fragments.FragmentTwo;
 
 public class FragmentActivity extends AppCompatActivity {
     private TextView tvUno;
@@ -52,5 +56,4 @@ public class FragmentActivity extends AppCompatActivity {
         fragmentTransaction.replace(frameLayout.getId(),fragment);
         fragmentTransaction.commit();
     }
-
 }

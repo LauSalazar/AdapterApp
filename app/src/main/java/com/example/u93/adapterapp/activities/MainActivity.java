@@ -1,9 +1,15 @@
-package com.example.u93.adapterapp;
+package com.example.u93.adapterapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+
+import com.example.u93.adapterapp.R;
+import com.example.u93.adapterapp.adapters.AdapterPersons;
+import com.example.u93.adapterapp.adapters.AdapterProducts;
+import com.example.u93.adapterapp.models.Person;
+import com.example.u93.adapterapp.models.Product;
 
 import java.util.ArrayList;
 

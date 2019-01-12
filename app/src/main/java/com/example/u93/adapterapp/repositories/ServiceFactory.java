@@ -1,4 +1,4 @@
-package com.example.u93.adapterapp;
+package com.example.u93.adapterapp.repositories;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

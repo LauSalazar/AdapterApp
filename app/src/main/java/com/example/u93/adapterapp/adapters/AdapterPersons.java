@@ -1,4 +1,4 @@
-package com.example.u93.adapterapp;
+package com.example.u93.adapterapp.adapters;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -7,7 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.example.u93.adapterapp.models.Person;
+import com.example.u93.adapterapp.R;
 
 import java.util.ArrayList;
 

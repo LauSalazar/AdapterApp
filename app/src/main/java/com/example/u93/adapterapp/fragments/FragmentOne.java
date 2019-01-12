@@ -1,5 +1,6 @@
-package com.example.u93.adapterapp;
+package com.example.u93.adapterapp.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -7,6 +8,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import com.example.u93.adapterapp.activities.CreateProductActivity;
+import com.example.u93.adapterapp.models.Person;
+import com.example.u93.adapterapp.R;
+import com.example.u93.adapterapp.adapters.AdapterPersons;
 
 import java.util.ArrayList;
 
@@ -48,6 +55,7 @@ public class FragmentOne extends Fragment {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(view.getContext());
         recyclerViewPersons.setLayoutManager(linearLayoutManager);
         recyclerViewPersons.setAdapter(adapterPersons);
+
 
     }
 
